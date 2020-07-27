@@ -1,2 +1,6 @@
 1st line
 sencode line
+=======
+2nd line
+34d line
+
