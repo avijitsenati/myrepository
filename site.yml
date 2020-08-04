@@ -1,5 +1,6 @@
 ---
-- hosts: webserver
+- hosts: httpd
+  become: true
   become_user: root
   tasks:
   - name: Install httpd
