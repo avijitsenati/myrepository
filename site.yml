@@ -2,8 +2,10 @@
 - hosts: httpd
   become: true
   become_user: root
-  tasks:
-  - name: Install httpd
-    yum: name=httpd state=present
-  - name: Start httpd
-    service: name=httpd state=started
+  roles:
+     - test-role-1
+- hosts: apache
+  become: true
+  become_user: root
+  roles:
+     - test-role-2
